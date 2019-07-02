@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1 style="text-align:center">SIMPLE CALCULATOR</h1>
+<form>
+OPERAND 1:<br><input type="number" name="num" id="op1"><br>
+OPERAND 2:<br><input type="number" name="num" id="op2"><br>
+<input type="radio" name="calc" id="add" value="ADD" onclick="Result()">ADD <br>
+<input type="radio" name="calc" id="sub" value="SUB" onclick="Result()">SUBTRACT<br>
+<input type="radio" name="calc" id="mul" value="MUL" onclick="Result()">MULTIPLY<br>
+<input type="radio" name="calc" id="div" value="DIV" onclick="Result()">DIVIDE<br>
+RESULT IS: <span id="res"></span>
+</form>
+</body>
+<script type="text/javascript">
+function Result(){
+ var x=document.getElementById("op1").value;
+ var y=document.getElementById("op2").value;
+ if((x=="")||(y==""))
+{
+ document.getElementById("res").innerHTML="ENTER A NUMBER IN BOTH FIELDS";
+}
+else
+{
+if(document.getElementById("add").checked)
+{
+ a=parseInt(x);
+ b=parseInt(y);
+ document.getElementById("res").innerHTML=a+b;
+}
+else if(document.getElementById("sub").checked)
+{
+document.getElementById("res").innerHTML=x-y;
+}
+else if(document.getElementById("mul").checked)
+{
+document.getElementById("res").innerHTML=x*y;
+}
+else if(document.getElementById("div").checked)
+{
+if(y!=0)
+document.getElementById("res").innerHTML=x/y;
+else
+document.getElementById("res").innerHTML="DIVIDE BY ZERO ERROR";
+}
+}
+}
+</script>
+</html>
+
+
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<input type="number" name="num" id="no"><br>
+<input type="button" name="but" value="MULTIPLY BY 2" onclick="Mulby2()">
+<input type="button" name="but1" value="SQUARE" onclick="Mulbyitself()"><br>
+RESULT AFTER MULTIPLYING BY 2: <span id="res"></span><br>
+RESULT AFTER MULTIPLYING BY ITSELF : <span id="res1"></span>
+</body>
+
+<script type="text/javascript">
+function Mulby2()
+{
+var x= document.getElementById("no").value;
+if (x=="") {
+document.getElementById("res").innerHTML= "ENTER A NUMBER";
+          }
+else{
+document.getElementById("res").innerHTML= x*2;
+}
+}
+
+function Mulbyitself()
+{
+var x= document.getElementById("no").value;
+if (x=="") {
+document.getElementById("res1").innerHTML="ENTER A NUMBER";
+          }
+else{
+document.getElementById("res1").innerHTML=x*x;
+}
+}
+
+</script>
+</html>
+
+

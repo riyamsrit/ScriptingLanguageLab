@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+Enter a number :<br>
+<input type="number" name="num" id="no"><br>
+<input type="button" name="but" onclick="check1()" value="CHECK FOR DIVISIBILITY"><br>
+Result is:<span id="val"></span>
+</form>
+</body>
+<script type="text/javascript"
+function check1() {
+var x= document.getElementById("no").value;
+if (x="") {
+document.getElementById("val").innerHTML="invalid";
+           }
+else if (x<0)
+document.getElementById("val").innerHTML= "Enter a positive number";
+else {
+if(x%3==0 && x%7==0)
+document.getElementById("val").innerHTML= "DIVISIBLE BY BOTH 3 AND 7";
+else if(x%3==0 && x%7!=0)
+document.getElementById("val").innerHTML= "DIVISIBLE BY 3 NOT 7";
+else if(x%3!=0 && x%7==0) 
+document.getElementById("val").innerHTML= "DIVISIBLE BY 7 NOT 3";
+else
+document.getElementById("val").innerHTML= "DIVISIBLE BY NONE";
+       }
+ }
+</script>
+</html>
+
+
+
+
+

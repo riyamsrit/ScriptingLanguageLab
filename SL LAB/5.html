@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<body>
+<table border="1">
+<tr>
+<th>NAME</th><th>NATIVE COUNTRY</th><th>STORY TITLE</th><th>PUBLICATION YEAR</th>
+</tr>
+<tr>
+<td id="n1"></td><td id="c1"></td><td id="t1"></td><td id="y1"></td><br>
+</tr>
+<tr>
+<td id="n2"></td><td id="c2"></td><td id="t2"></td><td id="y2"></td><br>
+</tr>
+</table>
+NAME: <span id="n3"></span> NATIVE COUNTRY:<span id="c3"></span> STORY TITLE:<span id="t3"></span> YEAR:<span id="y3"></span><br>
+NAME: <span id="n4"></span> NATIVE COUNTRY:<span id="c4"></span> STORY TITLE:<span id="t4"></span> YEAR:<span id="y4"></span><br>
+</body>
+<script src="5.json"></script>
+<script type="text/javascript">
+var x=JSON.parse(x)
+document.getElementById("n1").innerHTML= x.p1.nam;
+document.getElementById("c1").innerHTML= x.p1.con;
+document.getElementById("t1").innerHTML= x.p1.st;
+document.getElementById("y1").innerHTML= x.p1.year;
+document.getElementById("n2").innerHTML= x.p2.nam;
+document.getElementById("c2").innerHTML= x.p2.con;
+document.getElementById("t2").innerHTML= x.p2.st;
+document.getElementById("y2").innerHTML= x.p2.year;
+document.getElementById("n3").innerHTML= x.p3.nam;
+document.getElementById("c3").innerHTML= x.p3.con;
+document.getElementById("t3").innerHTML= x.p3.st;
+document.getElementById("y3").innerHTML= x.p3.year;
+document.getElementById("n4").innerHTML= x.p4.nam;
+document.getElementById("c4").innerHTML= x.p4.con;
+document.getElementById("t4").innerHTML= x.p4.st;
+document.getElementById("y4").innerHTML= x.p4.year;
+</script>
+</html>
+
+
+
+

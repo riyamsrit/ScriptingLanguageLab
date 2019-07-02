@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<body>
+<h1> WEB PAGE TO PERFORM SIMPLE MULTIPLICATION</h1>
+<input type="number" name="num" id="n"><br>
+<input type="button" name="but" value="MULTIPLY BY 2" onclick="mulby2()">
+<input type="button" name= "but2" value="MULTIPLY BY ITSELF" onclick="mulbyitself()"> <br>
+RESULT AFTER MULTIPLYING BY 2: <span id="res1"></span><br>
+RESULT AFTER MULTIPLYING BY ITSELF : <span id="res2"></span><br>
+</body>
+
+<script type="text/javascript">
+function mulby2()
+{
+  x=document.getElementById("n").value;
+  if (x==""){
+   document.getElementById("res1").innerHTML= "INVALID";
+             }
+   else{
+   document.getElementById("res1").innerHTML= x*2;
+       }
+}
+function mulbyitself()
+{
+    x=document.getElementById("n").value;
+  if (x==" "){
+   document.getElementById("res2").innerHTML= "INVALID";
+             }
+   else{
+   document.getElementById("res2").innerHTML= x*x;
+       }
+}
+</script>
+</html>
+    
+  
+
+
